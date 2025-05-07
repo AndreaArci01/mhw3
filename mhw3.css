@@ -1,0 +1,571 @@
+body{
+font-family: "Poppins", sans-serif;
+margin: 0px;
+background-color: black;
+display: flex;
+flex-direction: column;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+}
+#left{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    height: 100%;
+    width: 50%;
+}
+#NavLogo{
+    width: 5%;
+    height: 80%;
+    margin-left: 5px;
+    background-image: url("SpotifyLogo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Circle{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    height: 50%;
+    margin-left: 5px;
+    border-radius: 50px;
+    background-color: rgb(49, 49, 49);
+}
+.Circle:hover{
+    background-color: rgb(77, 77, 77);
+}
+#NavLogoHome{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 3px;
+    background-image: url("HomeLogo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 50%;
+    margin-left: 10px;
+    margin-right: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(31, 31, 31);
+}
+#Search:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgb(42, 42, 42);
+}
+.SearchFocus{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 50%;
+    margin-left: 10px;
+    margin-right: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(31, 31, 31);
+    border: 2px solid white;
+}
+#SearchIcon{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    background-image: url("SearchIcon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input {
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+}
+input:hover{
+    background-color: rgb(42, 42, 42);
+}
+form {
+    margin-left: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+#ricerca button{
+    display: none;
+}
+#SearchD{
+    height: 80%;
+    width: 1px;
+    background-color: white;
+}
+#BrowseIcon{
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+    background-image: url("BrowseIcon.png");
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    display: flex;
+    align-items: center;
+}
+#right button{
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: black;
+    border: 0px;
+}
+#right button:hover{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1)
+}
+#SearchD2{
+    position:static;
+    margin: 0px 20px;
+    height: 30px;
+    width: 1px;
+    background-color: white;
+    color: white;
+}
+#right #LoginButton{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 0px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(255, 255, 255);
+}
+.Pagebutton{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 0px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(255, 255, 255);
+}
+.Pagebutton:hover{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+}
+#BodyPage{
+display: flex;
+flex-direction: row;
+}
+#LeftBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 650px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: rgb(20, 20, 20);
+}
+#weather-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+}
+#weather-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+#weather-container p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+#weather-container #city-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+#weather-container #weather-description {
+    font-size: 18px;
+    color: #888;
+}
+#weather-container #temperature {
+    font-size: 22px;
+    color: #ff5722;
+    font-weight: bold;
+}
+#LeftLibrary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(20, 20, 20);
+    overflow-y: auto;
+}
+#Library{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;  
+    font-weight: 500;  
+    margin-top: 15px;
+    margin-left: 15px;
+    color: white;
+    font-size: 14px;
+}
+#Plus{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-image: url("Plus.png");
+    background-size: cover;
+    background-position: center;
+}
+#Plus:hover{
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-image: url("Plus.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.078);
+}
+#FirstRow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.DivLibrary{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 200px;
+    margin-top: 20px;
+    background-color: rgb(31, 31, 31);
+    border-radius: 8px;
+    color: white;
+}
+.DivLibrary h4{
+margin-top: 10px;
+margin-left: 10px;
+}
+.DivLibrary h5{
+margin-left: 10px;
+}
+.DivLibrary .Pagebutton{
+width: 35%;
+height: 20%;
+margin-bottom: 15px;
+}
+.DivLibrary .Pagebutton:hover{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
+}
+.DivLibrary #Pagebutton2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 42%;
+    height: 20%;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 0px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(255, 255, 255);
+}
+.DivLibrary #Pagebutton2:hover{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 43%;
+    height: 21%;
+    margin-left: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
+    }
+.FirstFlexButton{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(31, 31, 31);
+    border: 0px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+#RightBody{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#FlexButton{
+    display: flex;
+    justify-content: space-between;
+}
+.Other{
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255, 0.3);
+    background-color: rgb(31, 31, 31);
+    border: 0px;
+    font-size: 15px;
+}
+.Other:hover{
+    text-decoration:underline;
+}
+.Less{
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255, 0.3);
+    background-color: rgb(31, 31, 31);
+    border: 0px;
+    font-size: 15px;
+}
+.Less:hover{
+    text-decoration: underline;
+}
+.Songs{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Songs2{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Song{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.Song img{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.Song:hover{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+.SongName{
+color: white;
+}
+.ArtistName{
+color: rgba(255, 255, 255, 0.7);
+font-size: 12px;
+}
+.Covers{
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 70%;
+    width: 90%;
+}
+#Cover1{
+    background-image: url("Song_Babel.jpg");
+}
+#Cover2{
+    background-image: url("Song_Reincarnated.jpg");
+}
+#Cover3{
+    background-image: url("Song_HeyYou.jpg");
+}
+#Cover4{
+    background-image: url("Song_StillIntoYou.jpg");
+}
+#Cover5{
+    background-image: url("Song_Muro.jpg");
+}
+#Cover6{
+    background-image: url("Song_RISE!.jpg");
+}
+#Cover7{
+    background-image: url("Song_BalordaNostalgia.jpg");
+}
+#Cover8{
+    background-image: url("Song_LaCuraPerMe.jpg");
+}
+#Cover9{
+    background-image: url("Song_NUEVAYoL.jpg");
+}
+#Cover10{
+    background-image: url("Song_OhMammaMia.jpg");
+}
+#Artists{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+}
+#Artist1{
+    background-image: url("Artist_Annalisa.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    margin-top: 10px;
+    height: 70%;
+    width: 90%;
+}
+#Artist2{
+    background-image: url("Artist_Joji.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    margin-top: 10px;
+    height: 70%;
+    width: 90%;
+}
+#Artist3{
+    background-image: url("Artist_Jovanotti.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    margin-top: 10px;
+    height: 70%;
+    width: 90%;
+}
+#Artist4{
+    background-image: url("Artist_Doechii.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    margin-top: 10px;
+    height: 70%;
+    width: 90%;
+}
+#Artist5{
+    background-image: url("Artist_AJR.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    margin-top: 10px;
+    height: 70%;
+    width: 90%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgb(134, 61, 134);
+    border-top: 10px solid black;
+    
+}
+#FooterLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    margin-left: 20px;
+}
+#Span1{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+#Span2{
+    color: white;
+    font-size: 11px;
+}
+#FooterRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-right: 20px;
+}
+#FooterRight .Pagebutton{
+    height: 70%;
+    width: 100%;
+}
+.hidden{
+    display:none;
+}
+#searchResults {
+    display:flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom:35px;
+    margin-top: 10px;
+    flex-wrap:wrap;
+}
+.Cover {
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+

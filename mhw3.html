@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="mhw3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+    
+    <nav>
+        <div id="left">
+            <div id="NavLogo"></div>
+            <div class="Circle"><div id="NavLogoHome"></div></div>
+            <div id="Search"> 
+                <form id="ricerca" autocomplete="off">
+                    <input type="text" id="search-bar" placeholder="Cerca brani, album, artisti">
+                    <button type="submit"></button>
+                  </form>
+                <div id="SearchD"></div>
+                <div id="BrowseIcon"></div>
+            </div>
+        </div>
+        
+        <div id="right">
+        <button id="PremiumButton">Premium</button>
+        <button id="AssistanceButton">Assistenza</button>
+        <button id="DownloadButton">Scarica</button>
+
+        <div id="SearchD2"></div>
+
+        <button id="InstallButton">Installa app</button>
+        <button id="Subscribe">Iscriviti</button>
+        <button id="LoginButton">Accedi</button>
+
+        </div>
+
+    </nav>
+
+    <article id="BodyPage">
+
+        <div id="LeftBody">
+            <div id="FirstRow"><div id="Library">La tua libreria</div> <div id="Plus"></div></div>
+            
+            <div id="LeftLibrary">
+                <div class="DivLibrary">
+                <h4>Crea la tua playlist</h4>
+                <h5>È facile, ti aiuteremo</h5>
+                <button class="Pagebutton">Crea playlist</button>
+            </div>
+            <div class="DivLibrary">
+                <h4>Cerca qualche podcast da seguire</h4>
+                <h5>Ti aggiorneremo sui nuovi episodi</h5>
+                <button id="Pagebutton2">Sfoglia i podcast</button>
+                </div>
+            </div>
+
+
+            <div id="weather-container">
+                <h2>Weather-mood!</h2>
+                <p id="city-name"></p>
+                <p id="weather-description"></p>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+            </div>
+                
+                
+        </div>
+
+        <div id="RightBody">
+
+        <div id="searchResults"></div>
+
+
+            <div id="FlexButton">
+                <button class="FirstFlexButton"> Brani di tendenza </button>
+                <button class="Other"> Mostra tutto </button>
+                <button class="Less hidden"> Riduci </button>
+            </div>
+
+            <div class="Songs">
+                <div class="Song">
+                    <div class="Covers" id="Cover1"></div>
+                    <span class="SongName">Babel</span>
+                    <span class="ArtistName">Mumford & Sons</span>
+                </div>
+
+                <div class="Song">
+                    <div class="Covers" id="Cover2"></div>
+                    <span class="SongName">Reincarnated</span>
+                    <span class="ArtistName">Kendric Lamar</span>
+                </div>
+
+                <div class="Song">
+                    <div class="Covers" id="Cover3"></div>
+                    <span class="SongName">Hey You</span>
+                    <span class="ArtistName">Dave Benedict, Danny Craig</span>
+                </div>
+
+                <div class="Song">
+                    <div class="Covers" id="Cover4"></div>
+                    <span class="SongName">Still into You</span>
+                    <span class="ArtistName">Paramore</span>
+                </div>
+
+                <div class="Song">
+                    <div class="Covers" id="Cover5"></div>
+                    <span class="SongName">Muro</span>
+                    <span class="ArtistName">Rbsn, Marco Castello</span>
+                </div>
+            </div>
+
+            <div class="Songs2 hidden">
+                <div class="Song">
+                    <div class="Covers" id="Cover6"></div>
+                    <span class="SongName">RISE!</span>
+                    <span class="ArtistName">Tyler, The Creator</span>
+                </div>
+
+                <div class="Song">
+                    <div class="Covers" id="Cover7"></div>
+                    <span class="SongName">Balorda Nostalgia</span>
+                    <span class="ArtistName">OLLY</span>
+                </div>
+
+                <div class="Song">
+                    <div class="Covers" id="Cover8"></div>
+                    <span class="SongName">LA CURA PER ME</span>
+                    <span class="ArtistName">Giorgia</span>
+                </div>
+
+                <div class="Song">
+                    <div class="Covers" id="Cover9"></div>
+                    <span class="SongName">NUOEVAYoL</span>
+                    <span class="ArtistName">Bad Bunny</span>
+                </div>
+
+                <div class="Song">
+                    <div class="Covers" id="Cover10"></div>
+                    <span class="SongName">Oh Mamma Mia</span>
+                    <span class="ArtistName">Guè, Rose Villain</span>
+                </div>
+
+                
+
+            </div>
+
+            <div id="FlexButton">
+                <button class="FirstFlexButton"> Artisti popolari </button>
+            </div>
+
+            <div id="Artists">
+                <div class="Song">
+                    <div id="Artist1"></div>
+                    <span class="SongName">Annalisa</span>
+                    <span class="ArtistName">Artista</span>
+                </div>
+
+                <div class="Song">
+                    <div id="Artist2"></div>
+                    <span class="SongName">Joji</span>
+                    <span class="ArtistName">Artista</span>
+                </div>
+                
+                <div class="Song">
+                    <div id="Artist3"></div>
+                    <span class="SongName">Jovanotti</span>
+                    <span class="ArtistName">Artista</span>
+                </div>
+
+                <div class="Song">
+                    <div id="Artist4"></div>
+                    <span class="SongName">Doechii</span>
+                    <span class="ArtistName">Artista</span>
+                </div>
+
+                <div class="Song">
+                    <div id="Artist5"></div>
+                    <span class="SongName">AJR</span>
+                    <span class="ArtistName">Artista</span>
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+    <footer>
+        <div id="FooterLeft">
+            <span id="Span1">Anteprima di Spotify</span>
+            <span id="Span2">Iscriviti per ricevere brani e podcast illimitati!</span>
+            <span id="Span2">Andrea Arcidiacono, Web Programming 2025</span>
+        </div>
+
+        <div id="FooterRight"><button class="Pagebutton">Iscriviti gratis</button></div>
+    </footer>
+
+</body>
+</html>
